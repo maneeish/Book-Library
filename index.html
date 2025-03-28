@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book library</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1> Book Library</h1>
+    <p class="description">
+      "Discover, organize, and manage your book collection effortlessly with our
+      sleek and interactive Book Library app!
+    </p>
+    <!-- controls -->
+    <div class="controls">
+      <input type="text" placeholder="Search here.." id="search-box" />
+      <div>
+        <label for="sort">Sort</label>
+        <select name="sort" id="sort" default="title">
+          <option value="title">Title</option>
+          <option value="year">Year</option>
+        </select>
+      </div>
+
+      <div class="view">
+        <button id="list-view">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button id="grid-view">
+          <i class="fa-solid fa-grip"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- books list goes here -->
+    <div class="books-container">
+      <!-- <div class="book">
+        <img src="" alt="thumbnail" id="thumbnail" />
+        <div class="book-info">
+          <h2 id="book-title">title</h2>
+          <p id="author">author</p>
+          <small>Publisher</small>
+          <p id="published-date">year</p>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- pagination -->
+    <div class="container">
+      <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="pagination-btns-container"></div>
+      <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <footer>
+      <p>&copy; Developed By Manish</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
